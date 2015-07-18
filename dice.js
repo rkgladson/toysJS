@@ -43,7 +43,7 @@
 
     namespace.diceSet = diceSet;
     function roll(sides, rolls) {
-        return diceSet(sides, rolls).map(sum);
+        return diceSet(sides, rolls).reduceRight(sum);
     }
     namespace.roll = roll;
 
