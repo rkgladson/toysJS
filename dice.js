@@ -30,11 +30,11 @@
             });
         } :
         function dumbBrowser/*!*/(sides, dieNumber) {
-            var set = [], curRoll = 0, maxRoll = Math.abs(dieNumber) || 1;
+            var dieR = [], curRoll = 0, maxRoll = Math.abs(dieNumber) || 1;
             for (; curRoll < maxRoll; curRoll += 1) {
-                set.push(Math.floor(Math.random() * (sides - 1)) + 1);
+                dieR.push(Math.floor(Math.random() * (sides - 1)) + 1);
             }
-            return set;
+            return dieR;
         };
 
     function sum(prev, cur) {
